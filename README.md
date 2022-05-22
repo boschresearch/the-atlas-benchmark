@@ -87,5 +87,5 @@ In case of questions and comments, feel free to drop us a line at [andrey.rudenk
 the-atlas-benchmark is open-sourced under the Apache-2.0 license. See the
 [LICENSE](LICENSE) file for details.
 
-For a list of other open source components included in UUV Simulator, see the
+For a list of other open source components included in the-atlas-benchmark, see the
 file [open_source_licenses.md](open_source_licenses.md).
