@@ -1,0 +1,28 @@
+# This branch collects all parameters related to loading the trajectory and map data
+dataset:
+    name: thor1
+    data: [/dataset/thor_data/thor_Ex_1_run_1-traj.ndjson, /dataset/thor_data/thor_Ex_1_run_2-traj.ndjson, /dataset/thor_data/thor_Ex_1_run_3-traj.ndjson, /dataset/thor_data/thor_Ex_1_run_4-traj.ndjson]
+    frequency: 100
+    annotation interval: 1
+    goals: /dataset/thor_data/destinations.txt
+    map:
+      type: sem
+      sem_class: /dataset/thor_data/thor_sem_classes.ndjson
+      picture: /dataset/thor_data/thor_Ex_1-f_s.ndjson
+      obstacle_type: 1 # What obstacles are considered: 0 for obstacle-unaware, 1 for grid-map, 2 for point-radius obstacles
+  #map: Please figure out an input format for the map!
+
+
+# This branch collects all parameters related to the benchmark and experiment setup
+benchmark:
+  setup:
+    interpolate: True
+    smooth: 5 # 0 for no smoothing
+    downsample: True
+    downsample rate: 40 # fps (?) NULL for no downsampling
+    downsample map: False
+    downsample map rate: 3
+    added_noise_sigma: 0.0 # 0 for no added noise
+
+    observation period: 8
+    prediction horizon: 12
