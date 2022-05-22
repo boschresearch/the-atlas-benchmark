@@ -1,0 +1,72 @@
+class: Predictor_kara
+optim:
+  d_max:
+    max: 40
+    min: 0.005
+  d_mid:
+    max: 30
+    min: 0.005
+  d_min:
+    max: 10
+    min: 0.005
+  k:
+    max: 30
+    min: 0.001
+  kara_scale:
+    max: 100
+    min: 1
+param:
+  default:
+    N: 4
+    d_max: 5.6
+    d_mid: 2.6
+    d_min: 1
+    future_horizon: 40
+    k: 0.8
+    kara_scale: 37
+    m: 80
+    r_i: 0.25
+    r_ij: 0.5
+    safe_di: 0.7
+    tau: 0.5
+  meta:
+    goal_step: 20
+    load_goal: false
+    set_goal: true
+    v0_mode: gaussian
+    v0_sigma: 1.5
+  optimal:
+    atc:
+      d_max: 38.930192536518135
+      d_mid: 24.525431542211262
+      d_min: 2.281858304571398
+      k: 15.438662296606907
+      kara_scale: 1.2452325275497882
+    eth:
+      d_max: 3.2878773697162353
+      d_mid: 1.8106566736559213
+      d_min: 0.17550314607554995
+      k: 0.1826104251757498
+      kara_scale: 39.34306007725348
+    hotel:
+      d_max: 0.06931542319312012
+      d_mid: 1.7596329505227797
+      d_min: 0.07568015083065413
+      k: 0.07241485014101852
+      kara_scale: 99.99699154101295
+    thor1:
+      d_max: 38.41981774880909
+      d_mid: 29.934326084895666
+      d_min: 1.9789742967402841
+      k: 1.3574775146167013
+      kara_scale: 48.65617142806604
+    thor3:
+      d_max: 0.2271576704989596
+      d_mid: 18.564899836161015
+      d_min: 3.277572366781998
+      k: 1.4402760521085887
+      kara_scale: 85.4728550798466
+  uncertainty:
+    num_particles: 20
+    uncertainty: false
+    uncertainty sigma: 0.3

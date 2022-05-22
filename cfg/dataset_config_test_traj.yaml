@@ -1,0 +1,27 @@
+# This branch collects all parameters related to loading the trajectory and map data
+dataset:
+    name: test_traj
+    data: [/dataset/test_traj_data/test_traj.ndjson]
+    frequency: 4
+    annotation interval: 2
+    goals: /dataset/seq_eth/destinations.txt
+    map:
+      type: pic # type: pic or sem(semantic)
+      picture: /dataset/seq_eth/map.png
+      H_matrix: /dataset/seq_eth/H.txt
+      obstacle_type: 1 # What obstacles are considered: 0 for obstacle-unaware, 1 for grid-map, 2 for point-radius obstacles
+
+
+# This branch collects all parameters related to the benchmark and experiment setup
+benchmark:
+  setup:
+    interpolate: True
+    smooth: 5 # 0 for no smoothing
+    downsample: False
+    downsample rate: 1 # fps  1 for no downsampling
+    downsample map: False
+    downsample map rate: 3
+    added_noise_sigma: 0 # 0 for no added noise
+
+    observation period: 6
+    prediction horizon: 10
