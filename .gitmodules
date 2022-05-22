@@ -1,6 +1,0 @@
-[submodule "Trajectron-plus-plus"]
-	path = Trajectron-plus-plus
-	url = https://github.com/StanfordASL/Trajectron-plus-plus.git
-[submodule "sgan"]
-	path = sgan
-	url = https://github.com/agrimgupta92/sgan.git
