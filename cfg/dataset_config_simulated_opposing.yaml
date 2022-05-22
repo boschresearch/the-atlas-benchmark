@@ -1,0 +1,23 @@
+# This branch collects all parameters related to loading the trajectory and map data
+dataset:
+    name: simulated-opposing
+    data: [/dataset/simulated/opposing.ndjson]
+    frequency: 10
+    annotation interval: 1
+    goals: NULL
+    map: NULL
+
+
+# This branch collects all parameters related to the benchmark and experiment setup
+benchmark:
+  setup:
+    interpolate: True
+    smooth: 0 # 0 for no smoothing
+    downsample: True
+    dowmsample rate: 4 # fps  1 for no downsampling
+    downsample map: False
+    downsample map rate: 3
+    added_noise_sigma: 0 # 0 for no added noise
+
+    observation period: 8
+    prediction horizon: 12
