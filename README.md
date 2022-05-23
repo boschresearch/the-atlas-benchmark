@@ -1,6 +1,6 @@
 # The Atlas Benchmark
 
-Tha Atlas Benchmark offers a collection of scripts and functions for evaluating 2D trajectory predictors.
+The Atlas Benchmark offers a collection of scripts and functions for evaluating 2D trajectory predictors.
 
 Atlas allows automated systematic evaluation and comparison of the built-in, external and new prediction methods on several popular datasets (ETH, ATC and THÖR) using probabilistic and geometric accuracy metrics (ADE, FDE, k-ADE and FDE, NLP).
 
