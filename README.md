@@ -27,9 +27,10 @@ Get all the submodules first:
 git submodule update --init --recursive
 ```
 
-Please make sure to download the models for S-GAN. Once you cd in the folder sgan, run the following script: 
+Please make sure to download the models for S-GAN using the following script: 
 
 ```
+cd sgan
 bash scripts/download_models.sh
 ```
 
