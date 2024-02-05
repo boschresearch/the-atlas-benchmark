@@ -16,5 +16,5 @@ from prediction import Prediction
 from benchmark import Benchmark
 
 from predict.new_predictor_template import Newclass
-from predict.predict_trajectronpp import TrajectronPredictor
-from predict.predict_sgan import SGANPredictor
+#from predict.predict_trajectronpp import TrajectronPredictor
+#from predict.predict_sgan import SGANPredictor
