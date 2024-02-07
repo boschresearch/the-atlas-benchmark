@@ -4,3 +4,4 @@ scipy
 pyyaml
 scikit-learn
 ConfigSpace
+python-dateutil==2.8.2
