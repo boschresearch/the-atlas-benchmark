@@ -21,38 +21,21 @@ Important highlights of Atlas include:
 5. Direct interface to the prediction methods.
 
 # Installation and setup
-Get all the submodules first:
 
 ```
-git submodule update --init --recursive
-```
-
-Please make sure to download the models for S-GAN using the following script: 
-
-```
-cd sgan
-bash scripts/download_models.sh
-```
-
-Make sure to install atlas in your local virtual environmnet:
-
-```
+git clone -b bare-bones https://github.com/boschresearch/the-atlas-benchmark.git
+cd the-atlas-benchmark
+git submodule add https://gitsvn-nt.oru.se/tim/the-atlas-benchmark-data.git dataset
 python3 -m venv atlas-env
-```
-
-or we recommend to use conda
-
-```
-conda create -n atlas-env python=3.7
-```
-
-Afterwards you can run pip to install the requirements (you may need to install swig via apt)
-
-```
+source atlas-env/bin/activate
+sudo apt install python3-sklearn swig
 pip install -r requirements.txt
+python tests/unittests.py
+code .
 ```
+Try the notebooks `understanding_data_import.ipynb` and `understanding_prediction.ipynb`
 
-You can verify the installation by running tests/unittests.py`.
+If both notebooks work without issues, the Atlas Benchmark is ready to go.
 
 # How to use it
 
